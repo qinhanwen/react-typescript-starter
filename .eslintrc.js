@@ -26,10 +26,18 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', 'unicorn', 'promise', '@typescript-eslint'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.tsx', '.ts', '.js', '.json'],
+      },
+      typescript: {},
+    },
+  },
   rules: {
     'import/extensions': [
       ERROR,
@@ -91,7 +99,7 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-interactions': OFF,
 
     'lines-between-class-members': [ERROR, 'always'],
-    indent: [ERROR, 2, { SwitchCase: 1 }],
+    // indent: [ERROR, 2, { SwitchCase: 1 }], // 缩进有冲突，先注释了 https://github.com/typescript-eslint/typescript-eslint/issues/441
     'linebreak-style': [ERROR, 'unix'],
     quotes: [ERROR, 'single'],
     semi: [ERROR, 'never'],
