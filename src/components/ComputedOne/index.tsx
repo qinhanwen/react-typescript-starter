@@ -8,7 +8,12 @@ function ComputedOne() {
       setcount(1)
     }, 2000)
   }, [])
-  return <p className='computed-one'>{count}</p>
+  return (
+    <div className='computed-one'>
+      <p>{count}</p>
+      <p>1</p>
+    </div>
+  )
 }
 
 export default ComputedOne

@@ -6,7 +6,7 @@ const webpack = require('webpack')
 
 module.exports = merge(webpackBaseConfig, {
   mode: 'development',
-  devtool: 'eval-source-map',
+  devtool: 'cheap-source-map',
   devServer: {
     stats: 'errors-only',
     quiet: true,

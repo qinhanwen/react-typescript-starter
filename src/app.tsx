@@ -1,16 +1,17 @@
 import React from 'react'
 import './app.scss'
 import ComputedOne from 'Components/ComputedOne'
-import ComputedTwo from 'Components/ComputedTwo'
+// import { hot } from 'react-hot-loader'
 
 function App() {
   return (
     <div className='app'>
       <ComputedOne />
-      <ComputedTwo />
     </div>
   )
 }
+// TODO 拆分出来 不打包进入 react-hot-loader
+// export default hot(module)(App)
 
 export default App
 

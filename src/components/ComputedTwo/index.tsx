@@ -2,7 +2,7 @@ import React from 'react'
 import './index.scss'
 
 function ComputedTwo() {
-  return <p className='computed-two'>111222</p>
+  return <p className='computed-two'>1112221</p>
 }
 
 export default ComputedTwo
