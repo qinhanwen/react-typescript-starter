@@ -1,4 +1,5 @@
 // https://eslint.bootcss.com/docs/user-guide/configuring
+// TODO 规则要改一下，用现成的，太繁琐了
 const OFF = 0
 const WARN = 1
 const ERROR = 2
@@ -109,5 +110,10 @@ module.exports = {
     'class-methods-use-this': ERROR,
     'jsx-quotes': [ERROR, 'prefer-single'],
     'global-require': OFF,
+    'react/prefer-stateless-function': OFF,
+    'react/prop-types': OFF,
+    '@typescript-eslint/ban-types': OFF,
+    'no-new': OFF,
+    'no-shadow': OFF,
   },
 }

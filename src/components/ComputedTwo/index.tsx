@@ -1,26 +1,21 @@
 import React from 'react'
 import './index.scss'
+import { add } from 'Utils/math'
+import { resolve } from 'build/utils'
 
-function ComputedTwo() {
-  return <p className='computed-two'>1112221</p>
+interface IProps {
+  a: number
+  b: number
+}
+
+function ComputedTwo(props: IProps) {
+  const { a, b } = props
+  const sum = add(a, b)
+  if (Array.isArray([])) {
+    console.log(1)
+  }
+
+  return <p className='computed-two'>{`Hi, I'm computed two, my sum is ${sum}.`}</p>
 }
 
 export default ComputedTwo
-
-// import React from 'react'
-// import './index.scss'
-// import { add } from 'Utils/math'
-
-// interface IProps {
-//   a: number
-//   b: number
-// }
-
-// function ComputedTwo(props: IProps) {
-//   const { a, b } = props
-//   const sum = add(a, b)
-
-//   return <p className='computed-two'>{`Hi, I'm computed two, my sum is ${sum}.`}</p>
-// }
-
-// export default ComputedTwo
