@@ -115,5 +115,7 @@ module.exports = {
     '@typescript-eslint/ban-types': OFF,
     'no-new': OFF,
     'no-shadow': OFF,
+    'jsx-a11y/no-static-element-interactions': OFF,
+    'no-underscore-dangle': OFF,
   },
 }

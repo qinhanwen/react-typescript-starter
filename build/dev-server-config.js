@@ -6,7 +6,7 @@ module.exports = {
   HOST: 'localhost',
   PROCESS: false,
   INLINE: true,
-  HOT: true,
+  HOT: false,
   AUTO_OPEN_BROWER: true,
   CONTENT_BASE: resolve('dist'),
 }
